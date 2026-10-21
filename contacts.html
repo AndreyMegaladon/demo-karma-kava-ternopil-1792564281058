@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карма Кава — Контакти</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-900 text-neutral-100 font-sans">
+    <header class="sticky top-0 z-50 bg-neutral-900/90 backdrop-blur-md border-b border-neutral-800 h-20 flex items-center">
+        <div class="max-w-6xl mx-auto w-full px-6 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-wider text-amber-500">КАРМА КАВА</a>
+            <nav class="hidden md:flex space-x-2">
+                <a href="index.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 transition">Головна</a>
+                <a href="about.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 transition">Про нас</a>
+                <a href="services.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 transition">Меню</a>
+                <a href="gallery.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 transition">Галерея</a>
+                <a href="booking.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 transition">Бронювання</a>
+                <a href="contacts.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 font-medium">Контакти</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="max-w-6xl mx-auto px-6 py-4">
+        <div class="text-sm text-neutral-400">
+            <a href="index.html" class="hover:text-amber-500">Головна</a> > <span class="text-white">Контакти</span>
+        </div>
+    </div>
+
+    <section class="py-12 px-6 max-w-6xl mx-auto">
+        <h1 class="text-4xl font-bold mb-4 text-center text-amber-500">Контакти</h1>
+        <p class="text-center text-neutral-400 mb-16">Завітайте до нас на чашку ароматної кави</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="space-y-8">
+                <div class="bg-neutral-800 p-8 rounded-2xl border border-neutral-700">
+                    <h3 class="text-xl font-bold mb-4 text-amber-500">Адреса</h3>
+                    <p class="text-neutral-300">вулиця Валова, 5 (або вул. Гетьмана Сагайдачного, 13), Тернопіль, Україна</p>
+                </div>
+                <div class="bg-neutral-800 p-8 rounded-2xl border border-neutral-700">
+                    <h3 class="text-xl font-bold mb-4 text-amber-500">Графік роботи</h3>
+                    <p class="text-neutral-300">Пн-Нд: 08:00 &ndash; 21:00</p>
+                </div>
+                <div class="bg-neutral-800 p-8 rounded-2xl border border-neutral-700">
+                    <h3 class="text-xl font-bold mb-4 text-amber-500">Зв'язок</h3>
+                    <p class="text-neutral-300 mb-2">Телефон: <a href="tel:+380666609262" class="text-amber-500 hover:underline">+380666609262</a></p>
+                    <p class="text-neutral-300 mb-4">Email: <a href="mailto:info@karmakava.ua" class="text-amber-500 hover:underline">info@karmakava.ua</a></p>
+                    <p class="text-neutral-300">Instagram: <a href="https://www.instagram.com/karmakava_te/" target="_blank" class="text-amber-500 hover:underline">@karmakava_te</a></p>
+                </div>
+            </div>
+            <div class="bg-neutral-800 rounded-2xl overflow-hidden border border-neutral-700 min-h-[400px] flex items-center justify-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2618.375176044391!2d25.5925!3d49.5535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDMzJzEyLjYiTiAyNcKwMzUnMzMuMCJF!5e0!3m2!1suk!2sua!4v1600000000000!5m2!1suk!2sua" width="100%" height="100%" style="border:0; min-h: 450px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-neutral-950 text-neutral-400 py-12 border-t border-neutral-800 mt-20">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Карма Кава</h3>
+                <p>Найсмачніша кава та затишна атмосфера у центрі Тернополя.</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Контакти</h3>
+                <p>вулиця Валова, 5, Тернопіль</p>
+                <p>Телефон: +380666609262</p>
+                <p>Email: info@karmakava.ua</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Графік роботи</h3>
+                <p>Пн-Нд: 08:00 &ndash; 21:00</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
