@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карма Кава — Галерея</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-900 text-neutral-100 font-sans">
+    <header class="sticky top-0 z-50 bg-neutral-900/90 backdrop-blur-md border-b border-neutral-800 h-20 flex items-center">
+        <div class="max-w-6xl mx-auto w-full px-6 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-wider text-amber-500">КАРМА КАВА</a>
+            <nav class="hidden md:flex space-x-2">
+                <a href="index.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 transition">Головна</a>
+                <a href="about.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 transition">Про нас</a>
+                <a href="services.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 transition">Меню</a>
+                <a href="gallery.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 font-medium">Галерея</a>
+                <a href="booking.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 transition">Бронювання</a>
+                <a href="contacts.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 transition">Контакти</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="max-w-6xl mx-auto px-6 py-4">
+        <div class="text-sm text-neutral-400">
+            <a href="index.html" class="hover:text-amber-500">Головна</a> > <span class="text-white">Галерея</span>
+        </div>
+    </div>
+
+    <section class="py-12 px-6 max-w-6xl mx-auto">
+        <h1 class="text-4xl font-bold mb-4 text-center text-amber-500">Наша атмосфера</h1>
+        <p class="text-center text-neutral-400 mb-16">Відчуйте затишок та естетику &laquo;Карми Кави&raquo;</p>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="aspect-square overflow-hidden rounded-xl bg-neutral-800">
+                <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb" alt="Coffee shop interior" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl bg-neutral-800">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="Coffee cup" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl bg-neutral-800">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24" alt="Cafe atmosphere" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl bg-neutral-800">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Coffee making" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl bg-neutral-800">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" alt="Desserts" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl bg-neutral-800">
+                <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31" alt="Coffee beans" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-neutral-950 text-neutral-400 py-12 border-t border-neutral-800 mt-20">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Карма Кава</h3>
+                <p>Найсмачніша кава та затишна атмосфера у центрі Тернополя.</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Контакти</h3>
+                <p>вулиця Валова, 5, Тернопіль</p>
+                <p>Телефон: +380666609262</p>
+                <p>Email: info@karmakava.ua</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Графік роботи</h3>
+                <p>Пн-Нд: 08:00 &ndash; 21:00</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
